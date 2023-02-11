@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+      <div class="card">
+         <div class="card__front">
+            <div class="card__content">
+               <div class="card__number">0000 0000 0000 0000</div>
+               <div class="card__bottom">
+                  <div class="card__name">Jane Appleseed</div>
+                  <div class="card__date"><div class="card__month">00</div>/<div class="card__year">00</div></div>
+               </div>
+               
+            </div>
+         </div>
+         <div class="card__back">000</div>
+      </div>
+      <div class="info">
+         <form action="#" class="info__form">
+            <div class="info__name-block block">
+               <div class="info__name-title title">Cardholder Name</div>
+               <input placeholder="e.g. Jane Appleseed" type="text" name="name" class="info__name input" maxlength="28">
+               <div class="info__message"></div>
+            </div>
+            <div class="info__number-block block">
+               <div class="info__number-title title">Card Number</div>
+               <input placeholder="e.g. 1234 5678 9123 0000" type="text" name="number" class="info__number input" maxlength="19">
+               <div class="info__message"></div>
+            </div>
+            <div class="info__date-cvc">
+               <div class="info__date-block block">
+                  <div class="info__date-title title">Exp. Date (MM/YY)</div>
+                  <div class="info__date">
+                     <input placeholder="MM" type="text" name="month" class="info__month input" maxlength="2">
+                     <input placeholder="YY" type="text" name="year" class="info__year input" maxlength="2">
+                     <!-- min="1900" max="2099" step="1"  -->
+                  </div>
+                  <div class="info__message"></div>
+               </div>
+               <div class="info__cvc-block block">
+                  <div class="info__cvc-title title">CVC</div>
+                  <input placeholder="e.g. 123" type="cvc" name="month" class="info__cvc input" maxlength="3">
+                  <div class="info__message"></div>
+               </div>
+            </div>
+            <button class="info__btn btn">Confirm</button>
+         </form>
+      </div>
+
+      <div class="thank">
+         <img class="thank__icon" src="img/icon-complete.svg" alt="">
+         <div class="thank__title">THANK YOU!</div>
+         <div class="thank__text">We’ve added your card details</div>
+         <div class="thank__bnt btn">Continue</div>
+      </div>
+
+   </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
